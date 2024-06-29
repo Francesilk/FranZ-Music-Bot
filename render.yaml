@@ -1,0 +1,14 @@
+# Exported from Render on 2024-06-29T17:30:37Z
+services:
+- type: web
+  name: FranZ Music Bot
+  runtime: node
+  repo: https://github.com/Francesilk/FranZ-Music-Bot
+  plan: free
+  envVars:
+  - key: TOKEN
+    sync: false
+  region: singapore
+  buildCommand: npm install
+  startCommand: node index.js
+version: "1"
